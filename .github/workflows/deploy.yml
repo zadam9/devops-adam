@@ -20,8 +20,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd cv-devops-docker || git clone https://github.com/ton-user/cv-devops-docker.git
-            cd cv-devops-docker
+            cd devops-adam || git clone https://github.com/zadam9/devops-adam.git
+            cd devops-adam
             git pull origin main
             docker build -t mon-cv .
             docker rm -f cv-running || true
