@@ -13,15 +13,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@master
+      - name: Deploy with SSH
+        uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
           script: |
-            cd devops-adam || git clone https://github.com/zadam9/devops-adam.git
-            cd devops-adam
+            cd ~/devops-adam || git clone https://github.com/zadam9/devops-adam.git ~/devops-adam
+            cd ~/devops-adam
             git pull origin main
             docker build -t mon-cv .
             docker rm -f cv-running || true
