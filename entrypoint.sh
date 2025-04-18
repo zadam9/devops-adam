@@ -1,4 +1,4 @@
 #!/bin/sh
 
-# Lancer uniquement NGINX
+echo "Lancement de NGINX (HTTP uniquement, sans Certbot)..."
 nginx -g "daemon off;"
