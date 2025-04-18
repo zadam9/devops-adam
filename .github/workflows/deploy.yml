@@ -24,6 +24,7 @@ jobs:
             cd ~/devops-adam || git clone https://github.com/zadam9/devops-adam.git ~/devops-adam
             cd ~/devops-adam
             git pull origin main
-            docker build -t mon-cv .
+            docker stop cv-running || true
             docker rm -f cv-running || true
-            docker run -d -p 80:80 --name cv-running mon-cv
+            docker build -t mon-cv .
+            docker run -d -p 80:80 -p 443:443 --name cv-running mon-cv
