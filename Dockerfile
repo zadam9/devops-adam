@@ -1,8 +1,8 @@
 FROM nginx:alpine
 
-COPY ./index.html /usr/share/nginx/html/
-COPY ./css /usr/share/nginx/html/css
-COPY ./js /usr/share/nginx/html/js
-COPY ./assets /usr/share/nginx/html/assets
+COPY ./www/index.html /usr/share/nginx/html/
+COPY ./www/css /usr/share/nginx/html/css
+COPY ./www/js /usr/share/nginx/html/js
+COPY ./www/assets /usr/share/nginx/html/assets
 
 EXPOSE 80
