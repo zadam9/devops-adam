@@ -18,13 +18,10 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
-            cd ~/devops-adam || git clone https://github.com/zadam9/devops-adam.git ~/devops-adam
             cd ~/devops-adam
             git pull origin main
-            docker stop cv-running || true
-            docker rm -f cv-running || true
-            docker build -t mon-cv .
-            docker run -d -p 80:80 -p 443:443 --name cv-running mon-cv
+            docker-compose down
+            docker-compose up -d --build
