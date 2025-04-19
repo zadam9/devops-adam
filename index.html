@@ -1,329 +1,436 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary Meta Tags -->
-    <title>Portfolio Template - Open source</title>
-    <meta name="title" content="Portfolio" />
-    <meta
-      name="description"
-      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
-    />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://github.com/CommunityPro/portfolio-html"
-    />
-    <meta property="og:title" content="Portfolio Template - Open source" />
-    <meta
-      property="og:description"
-      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
-    />
-    <meta
-      property="og:image"
-      content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png"
-    />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="https://github.com/CommunityPro/portfolio-html"
-    />
-    <meta property="twitter:title" content="Portfolio Template - Open source" />
-    <meta
-      property="twitter:description"
-      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
-    />
-    <meta
-      property="twitter:image"
-      content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png"
-    />
-
-    <!-- Link -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="assets/favicon/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="assets/favicon/android-chrome-512x512.png"
-    />
+    <title>Adam | DevOps & Cloud Engineer</title>
+    <meta name="description" content="Portfolio d'Adam, DevOps & Cloud Engineer, étudiant à IMT Atlantique" />
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/certifications.css" />
   </head>
   <body>
-    <header id="hero">
-      <!-- Navbar -->
-      <nav class="navbar">
-        <div class="container">
-          <!-- Logo -->
-          <h1 id="logo">
-            <a href="https://github.com/zadam9"
-              ><img src="./assets/logo.png" alt="Your Logo"
-            /></a>
-          </h1>
-          <!-- Navbar links -->
-          <ul class="nav-menu">
-            <li><a class="nav-link" href="#projet">PROJET</a></li>
-            <li><a class="nav-link" href="#experiences">EXPÉRIENCES</a></li>
-            <li><a class="nav-link" href="#competences">COMPÉTENCES</a></li>
-            <li><a class="nav-link" href="#etudes">ÉTUDES</a></li>
-            <li><a class="nav-link" href="#contact">CONTACT</a></li>
-            <li>
-              <a
-                class="nav-link btn btn-primary"
-                href="cv-adam.pdf"
-                target="_blank"
-                >MON CV <i class="fas fa-arrow-right"></i
-              ></a>
-            </li>
+    <!-- Background Elements -->
+    <div class="bg-elements">
+      <div class="bg-circle circle-1"></div>
+      <div class="bg-circle circle-2"></div>
+      <div class="bg-circle circle-3"></div>
+      <div class="bg-grid"></div>
+    </div>
 
-            <!-- Toggle switch -->
-            <div class="theme-switch">
-              <input type="checkbox" id="switch" />
-              <label class="toggle-icons" for="switch">
-                <img class="moon" src="assets/moon.svg" />
-                <img class="sun" src="assets/sun.svg" />
-              </label>
-            </div>
-            <!-- Hamburger menu -->
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </div>
-      </nav>
-
-      <section class="header-container">
-        <img
-          class="profile-image"
-          src="assets/profile-image.svg"
-          alt=""
-        />
-        <h1>Adam</h1>
-
-        <div class="content-text">
-          <h2>Passionné DevOps &amp; Cloud</h2>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">
+          <span class="logo-text">A<span class="accent">.</span></span>
+        </a>
         
-
-          <p>
-            Étudiant en Réseaux &amp; Télécoms, admis à IMT Atlantique pour la rentrée 2025.
-            Je recherche une alternance de 3 ans en ingénierie réseaux, cloud, DevOps ou cybersécurité.
-          </p>
-        </div>
-      </section>
-    </header>
-
-    <!-- Projet -->
-    <section id="projet" class="project-container container">
-      <div class="division"></div>
-      <div class="content-text">
-        <h2>Projet</h2>
-      </div>
-
-      <div class="projet-content">
-        <h3>DÉPLOIEMENT DEVPS D'UN SITE WEB</h3>
-        
-        <div class="projet-details">
-          <div class="projet-item">
-            <i class="fas fa-check-circle"></i>
-            <p>Création d'un site web statique (CV en HTML/CSS), Dockerisé et hébergé sur AWS EC2</p>
-          </div>
-          
-          <div class="projet-item">
-            <i class="fas fa-check-circle"></i>
-            <p>Mise en place d'une chaîne CI/CD complète avec GitHub Actions</p>
-          </div>
-          
-          <div class="projet-item">
-            <i class="fas fa-check-circle"></i>
-            <p>Déploiement automatique via SSH + Docker depuis GitHub vers une VM cloud</p>
-          </div>
-          
-          <div class="projet-item">
-            <i class="fas fa-check-circle"></i>
-            <p>Utilisation de Docker, Git, Linux, et configuration de serveur NGINX</p>
-          </div>
-
-          <div class="projet-item">
-            <i class="fas fa-check-circle"></i>
-            <p>Gestion DNS, Certificats HTTPS</p>
-          </div>
-          
-          <div class="projet-links">
-            <a href="#" class="btn btn-primary projet-btn">
-              <i class="fas fa-globe"></i> Voir le site
-            </a>
-            <a href="https://github.com/zadam9/devops-adam" class="btn btn-secondary projet-btn">
-              <i class="fab fa-github"></i> Code source
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section Expériences -->
-    <section id="experiences" class="container">
-      <div class="division"></div>
-      <h2>Expériences</h2>
-      
-      <div class="experience-card">
-        <div class="experience-header">
-          <h3>APPRENTI TECHNICIEN RÉSEAUX ET SÉCuRITÉ</h3>
-          <div class="experience-meta">
-            <span class="experience-company"><i class="fas fa-building"></i> Mairie de Choisy-le-Roi</span>
-            <span class="experience-period"><i class="fas fa-calendar-alt"></i> 2024 - Aujourd'hui</span>
-          </div>
-        </div>
-        
-        <div class="experience-content">
-          <ul class="experience-tasks">
-            <li>Force de proposition auprès des opérateurs télécoms et suivi d'interventions.</li>
-            <li>Expérimentation et mise en œuvre de solutions cloud (Azure, Teams, Rainbow).</li>
-            <li>Participation à la sécurisation des systèmes et à la mise en place de procédures IT.</li>
-            <li>Support utilisateurs (niveau 1 à 2).</li>
-            <li>Automatisation et suivi de la migration de comptes Exchange via PowerShell (plus d'un millier
-                d’utilisateurs).</li>
-            <li>Intégration d’une solution de téléphonie IP open source interconnectée à l’infrastructure existante.</li>
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="#projets" class="nav-link" data-translate="nav.projects">Projets</a></li>
+            <li><a href="#experiences" class="nav-link" data-translate="nav.experience">Expériences</a></li>
+            <li><a href="#competences" class="nav-link" data-translate="nav.skills">Compétences</a></li>
+            <li><a href="#etudes" class="nav-link" data-translate="nav.education">Études</a></li>
+            <li><a href="#certifications" class="nav-link" data-translate="nav.certifications">Certifications</a></li>
+            <li><a href="#contact" class="nav-link" data-translate="nav.contact">Contact</a></li>
           </ul>
           
-          <div class="tech-tags">
-            <span class="tech-tag">Azure</span>
-            <span class="tech-tag">PowerShell</span>
-            <span class="tech-tag">VoIP</span>
-            <span class="tech-tag">Linux</span>
+          <div class="nav-actions">
+            <a href="cv-adam.pdf" class="btn btn-primary" target="_blank">
+              <span data-translate="nav.cv">Mon CV</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+            </button>
+
+            <div class="language-switcher">
+              <button class="lang-btn" data-lang="fr" aria-label="Switch to French">
+                <span>FR</span>
+              </button>
+              <button class="lang-btn" data-lang="en" aria-label="Switch to English">
+                <span>EN</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-content" data-aos="fade-up">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <span data-translate="hero.available">Disponible pour alternance</span>
+            </div>
+            <h1>Adam<span class="accent">.</span></h1>
+            <h2 data-translate="hero.title">DevOps & Cloud Engineer</h2>
+            <p data-translate="hero.description">Passionné par les technologies cloud, la conteneurisation et l'automatisation. Étudiant à IMT Atlantique, je recherche une alternance en ingénierie DevOps, Cloud ou Cybersécurité.</p>
+            
+            <div class="hero-cta">
+              <a href="#projets" class="btn btn-primary" data-translate="hero.projects">Découvrir mes projets</a>
+              <a href="#contact" class="btn btn-outline" data-translate="hero.contact">Me contacter</a>
+            </div>
+            
+            <div class="hero-socials">
+              <a href="https://github.com/zadam9" class="social-link" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/adam-a-71328b295" class="social-link" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="hero-image">
+            <div class="image-container">
+              <div class="tech-stack">
+                <div class="tech-icon" title="Docker">
+                  <i class="fab fa-docker"></i>
+                </div>
+                <div class="tech-icon" title="AWS">
+                  <i class="fab fa-aws"></i>
+                </div>
+                <div class="tech-icon" title="Linux">
+                  <i class="fab fa-linux"></i>
+                </div>
+                <div class="tech-icon" title="Git">
+                  <i class="fab fa-git-alt"></i>
+                </div>
+              </div>
+              <img src="assets/profile-image.svg" alt="Adam" class="profile-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Mes Projets<span class="accent">.</span></h2>
+          <p class="section-subtitle">Découvrez mes réalisations techniques</p>
+        </div>
+        
+        <div class="projects-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card featured-project">
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">DevOps</span>
+                <span class="tag">CI/CD</span>
+                <span class="tag">Docker</span>
+                <span class="tag">AWS</span>
+              </div>
+              <h3 class="project-title">Architecture DevOps Portfolio</h3>
+              <p class="project-description">
+                Mise en place d'une architecture DevOps complète pour ce portfolio, incluant
+                CI/CD avec GitHub Actions, déploiement automatisé sur AWS EC2, conteneurisation Docker
+                et configuration sécurisée avec HTTPS.
+              </p>
+              <div class="project-features">
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Infrastructure-as-Code</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>CI/CD Pipeline</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Certificats HTTPS automatisés</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Monitoring & Alerting</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/zadam9/devops-adam" class="btn btn-sm btn-outline" target="_blank">
+                  <i class="fab fa-github"></i>
+                  <span>Code Source</span>
+                </a>
+                <a href="https://aitalla.cloud" class="btn btn-sm btn-primary" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                  <span>Voir le site</span>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <div class="image-overlay"></div>
+              <img src="assets/project/devops-arch.jpg" alt="Architecture DevOps" />
+            </div>
+          </div>
+
+          <div class="project-card featured-project">
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">DevOps</span>
+                <span class="tag">Monitoring</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Grafana</span>
+              </div>
+              <h3 class="project-title">LaborEssence Dashboard</h3>
+              <p class="project-description">
+                Un tableau de bord de monitoring en temps réel pour Docker avec visualisation des ressources système,
+                statuts des sites web et métriques de performance. Intégration avec Grafana pour une visualisation
+                avancée des données.
+              </p>
+              <div class="project-features">
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Monitoring en temps réel</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Visualisation Grafana</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Alertes automatisées</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Intégration Docker</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/zadam9/monitoring-dashboard" class="btn btn-sm btn-outline" target="_blank">
+                  <i class="fab fa-github"></i>
+                  <span>Code Source</span>
+                </a>
+                <a href="http://13.53.125.198:8080/" class="btn btn-sm btn-primary" target="_blank">
+                  <i class="fas fa-external-link-alt"></i>
+                  <span>Voir le site</span>
+                </a>
+              </div>
+            </div>
+            <div class="project-image">
+              <div class="image-overlay"></div>
+              <img src="assets/project/dashboard.jpg" alt="LaborEssence Dashboard" />
+            </div>
+          </div>
+
+          <!-- Espace pour d'autres projets à ajouter ultérieurement -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiences" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Expériences<span class="accent">.</span></h2>
+          <p class="section-subtitle">Mon parcours professionnel</p>
+        </div>
+        
+        <div class="timeline" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+              <span>2024 - Présent</span>
+            </div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Apprenti Technicien Réseaux et Sécurité</h3>
+              <div class="timeline-company">
+                <i class="fas fa-building"></i>
+                <span>Mairie de Choisy-le-Roi</span>
+              </div>
+              <div class="timeline-description">
+                <ul class="timeline-list">
+                  <li>Force de proposition auprès des opérateurs télécoms et suivi d'interventions</li>
+                  <li>Expérimentation et mise en œuvre de solutions cloud (Azure, Teams, Rainbow)</li>
+                  <li>Participation à la sécurisation des systèmes et mise en place de procédures IT</li>
+                  <li>Automatisation et suivi de migration de comptes Exchange via PowerShell (1000+ utilisateurs)</li>
+                  <li>Intégration d'une solution de téléphonie IP open source interconnectée à l'infrastructure existante</li>
+                </ul>
+              </div>
+              <div class="timeline-tech">
+                <span class="tech-pill">Azure</span>
+                <span class="tech-pill">PowerShell</span>
+                <span class="tech-pill">VoIP</span>
+                <span class="tech-pill">Linux</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section Compétences -->
-    <section id="competences" class="container">
-      <div class="division"></div>
-      <h2>Compétences</h2>
-      
-      <div class="skills-container">
-        <div class="skills-category">
-          <h3><i class="fas fa-server"></i> DevOps & Cloud</h3>
-          <div class="skills-grid">
-            <div class="skill-item">
-              <span class="skill-name">Dockerr</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 75%;"></div>
-              </div>
+    <!-- Skills Section -->
+    <section id="competences" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Compétences<span class="accent">.</span></h2>
+          <p class="section-subtitle">Ce que je maîtrise</p>
+        </div>
+        
+        <div class="skills-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-server"></i>
+              <h3>DevOps & Cloud</h3>
             </div>
-            <div class="skill-item">
-              <span class="skill-name">AWS</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 80%;"></div>
+            <div class="skill-items">
+              <div class="skill-item" data-level="85">
+                <div class="skill-info">
+                  <span class="skill-name">Docker</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
               </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">CI/CD</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 90%;"></div>
+              <div class="skill-item" data-level="80">
+                <div class="skill-info">
+                  <span class="skill-name">AWS</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
               </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Lix</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 94%;"></div>
+              <div class="skill-item" data-level="90">
+                <div class="skill-info">
+                  <span class="skill-name">CI/CD</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-level="95">
+                <div class="skill-info">
+                  <span class="skill-name">Linux</span>
+                  <span class="skill-percentage">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        
-        <div class="skills-category">
-          <h3><i class="fas fa-network-wired"></i> Réseaux & Systèmes</h3>
-          <div class="skills-grid">
-            <div class="skill-item">
-              <span class="skill-name">Administration Réseau</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 92%;"></div>
-              </div>
+          
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-network-wired"></i>
+              <h3>Réseaux & Systèmes</h3>
             </div>
-            <div class="skill-item">
-              <span class="skill-name">VoIP</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 90%;"></div>
+            <div class="skill-items">
+              <div class="skill-item" data-level="92">
+                <div class="skill-info">
+                  <span class="skill-name">Administration Réseau</span>
+                  <span class="skill-percentage">92%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
               </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Are</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 85%;"></div>
+              <div class="skill-item" data-level="90">
+                <div class="skill-info">
+                  <span class="skill-name">VoIP</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
               </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Virtualisation</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 80%;"></div>
+              <div class="skill-item" data-level="85">
+                <div class="skill-info">
+                  <span class="skill-name">Azure</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-level="80">
+                <div class="skill-info">
+                  <span class="skill-name">Virtualisation</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        
-        <div class="skills-category">
-          <h3><i class="fas fa-code"></i> Programmation</h3>
-          <div class="skills-grid">
-            <div class="skill-item">
-              <span class="skill-name">PowerShell</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 85%;"></div>
-              </div>
+          
+          <div class="skill-category">
+            <div class="category-header">
+              <i class="fas fa-code"></i>
+              <h3>Programmation</h3>
             </div>
-            <div class="skill-item">
-              <span class="skill-name">Bash</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 90%;"></div>
+            <div class="skill-items">
+              <div class="skill-item" data-level="85">
+                <div class="skill-info">
+                  <span class="skill-name">PowerShell</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
               </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Python</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 73%;"></div>
+              <div class="skill-item" data-level="90">
+                <div class="skill-info">
+                  <span class="skill-name">Bash</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
               </div>
-            </div>
-            <div class="skill-item">
-              <span class="skill-name">Git</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 70%;"></div>
+              <div class="skill-item" data-level="75">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
+              <div class="skill-item" data-level="70">
+                <div class="skill-info">
+                  <span class="skill-name">Git</span>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -331,58 +438,194 @@
       </div>
     </section>
 
-    <!-- Section Études -->
-    <section id="etudes" class="container">
-      <div class="division"></div>
-      <h2>Études</h2>
-      
-      <div class="education-timeline">
-        <div class="education-item">
-          <div class="education-year">
-            <span>2025-2028</span>
-          </div>
-          <div class="education-content">
-            <h3>Cycle Ingénieur par Apprentissage</h3>
-            <p class="education-school"><i class="fas fa-university"></i> IMT Atlantique - Informatique, Réseaux et Télécommunications</p>
-          </div>
+    <!-- Education Section -->
+    <section id="etudes" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Formation<span class="accent">.</span></h2>
+          <p class="section-subtitle">Mon parcours académique</p>
         </div>
         
-        <div class="education-item">
-          <div class="education-year">
-            <span>2023-2025</span>
+        <div class="education-cards" data-aos="fade-up" data-aos-delay="100">
+          <div class="education-card">
+            <div class="edu-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="edu-years">2025 - 2028</div>
+            <h3 class="edu-degree">Cycle Ingénieur par Apprentissage</h3>
+            <div class="edu-school">
+              <i class="fas fa-university"></i>
+              <span>IMT Atlantique</span>
+            </div>
+            <p class="edu-description">Informatique, Réseaux et Télécommunications</p>
           </div>
-          <div class="education-content">
-            <h3>BUT Réseaux & Télécoms</h3>
-            <p class="education-school"><i class="fas fa-university"></i> IUT Créteil-Vitry - Spécialisation Réseaux Opérateurs et Multimédia (ROM)</p>
+          
+          <div class="education-card">
+            <div class="edu-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="edu-years">2023 - 2025</div>
+            <h3 class="edu-degree">BUT Réseaux & Télécoms</h3>
+            <div class="edu-school">
+              <i class="fas fa-university"></i>
+              <span>IUT Créteil-Vitry</span>
+            </div>
+            <p class="edu-description">Spécialisation Réseaux Opérateurs et Multimédia (ROM)</p>
+          </div>
+          
+          <div class="education-card">
+            <div class="edu-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="edu-years">2023</div>
+            <h3 class="edu-degree">Baccalauréat</h3>
+            <div class="edu-school">
+              <i class="fas fa-university"></i>
+              <span>Léonard de Vinci</span>
+            </div>
+            <p class="edu-description">Série générale</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title" data-translate="certifications.title">Certifications<span class="accent">.</span></h2>
+          <p class="section-subtitle" data-translate="certifications.subtitle">Mes certifications professionnelles</p>
+        </div>
         
-        <div class="education-item">
-          <div class="education-year">
-            <span>2023</span>
+        <div class="certifications-timeline" data-aos="fade-up" data-aos-delay="100">
+          <div class="certification-line"></div>
+          
+          <div class="certification-item">
+            <div class="certification-badge">
+              <img src="assets/certifications/aws.png" alt="AWS Badge" class="badge-image">
+            </div>
+            <div class="certification-content">
+              <div class="certification-header">
+                <h3 class="certification-title">AWS Cloud Practitioner</h3>
+                <div class="certification-status pending">
+                  <i class="fas fa-spinner fa-spin"></i>
+                  <span>En cours</span>
+                </div>
+              </div>
+              <div class="certification-issuer">
+                <i class="fab fa-aws"></i>
+                <span>Amazon Web Services</span>
+              </div>
+              <p class="certification-description">
+                Certification en cours sur les fondamentaux du cloud AWS.
+                Compréhension des services cloud et des concepts de base d'AWS.
+              </p>
+              <div class="certification-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>En préparation</span>
+              </div>
+            </div>
           </div>
-          <div class="education-content">
-            <h3>Baccalauréat</h3>
-            <p class="education-school"><i class="fas fa-university"></i> Léonard de Vinci - Série générale</p>
+          
+          <div class="certification-item">
+            <div class="certification-badge">
+              <img src="assets/certifications/ccna.png" alt="CCNA Badge" class="badge-image">
+            </div>
+            <div class="certification-content">
+              <div class="certification-header">
+                <h3 class="certification-title">CCNA 2024</h3>
+                <div class="certification-status completed">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Obtenue</span>
+                </div>
+              </div>
+              <div class="certification-issuer">
+                <i class="fab fa-cisco"></i>
+                <span>Cisco</span>
+              </div>
+              <p class="certification-description">
+                Certification en réseaux Cisco obtenue dans le cadre de ma formation BUT RT à l'IUT.
+                Validation des compétences en configuration et dépannage de réseaux.
+              </p>
+              <div class="certification-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>2024</span>
+              </div>
+            </div>
           </div>
+          
+          <!-- Espace pour ajouter d'autres certifications -->
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container">
-      <div class="division"></div>
-      <h2>Contact</h2>
-      <div class="contact-info">
-        <p><i class="fas fa-envelope"></i> adam.aitalla9@gmail.com</p>
-        <p><i class="fas fa-phone"></i> +33 6 95 79 54 51</p>
-        <div class="social">
-          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Contact<span class="accent">.</span></h2>
+          <p class="section-subtitle">Discutons de vos projets</p>
+        </div>
+        
+        <div class="contact-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Email</h3>
+              <a href="mailto:adam.aitalla9@gmail.com">adam.aitalla9@gmail.com</a>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h3>Téléphone</h3>
+              <a href="tel:+33695795451">+33 6 95 79 54 51</a>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3>Localisation</h3>
+              <p>Région parisienne, France</p>
+            </div>
+            
+            <div class="contact-socials">
+              <a href="https://github.com/zadam9" class="social-btn" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/adam-a-71328b295" class="social-btn" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <span class="logo-text">A<span class="accent">.</span></span>
+          </div>
+          <p class="copyright">© 2024 Adam. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
