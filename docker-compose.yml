@@ -29,9 +29,9 @@ services:
       - ./certbot/conf:/etc/letsencrypt
       - ./certbot/www:/var/www/certbot
     entrypoint: >
-      certbot certonly --webroot
+      sh -c "rm -rf /etc/letsencrypt/live/aitalla.cloud && certbot certonly --webroot
       --webroot-path=/var/www/certbot
       --email adam.aitalla9@gmail.com
       --agree-tos
       --no-eff-email
-      -d aitalla.cloud
+      -d aitalla.cloud"
