@@ -1,4 +1,5 @@
 version: '3'
+
 services:
   nginx:
     image: nginx:alpine
@@ -10,7 +11,6 @@ services:
       - ./:/usr/share/nginx/html
     ports:
       - "80:80"
-      # - "443:443"
     depends_on:
       - certbot
 
@@ -29,7 +29,10 @@ services:
       - ./certbot/conf:/etc/letsencrypt
       - ./certbot/www:/var/www/certbot
     entrypoint: >
-      sh -c "rm -rf /etc/letsencrypt/live/aitalla.cloud && certbot certonly --webroot
+      sh -c "rm -rf /etc/letsencrypt/live/aitalla.cloud
+      /etc/letsencrypt/archive/aitalla.cloud
+      /etc/letsencrypt/renewal/aitalla.cloud.conf && 
+      certbot certonly --webroot
       --webroot-path=/var/www/certbot
       --email adam.aitalla9@gmail.com
       --agree-tos
