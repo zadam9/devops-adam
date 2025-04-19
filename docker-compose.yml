@@ -11,6 +11,7 @@ services:
       - ./:/usr/share/nginx/html
     ports:
       - "80:80"
+      - "443:443"
     depends_on:
       - certbot
 
@@ -21,20 +22,3 @@ services:
       - ./certbot/conf:/etc/letsencrypt
       - ./certbot/www:/var/www/certbot
     entrypoint: /bin/sh -c "trap exit TERM; while :; do sleep 1; done"
-
-  certbot-gen:
-    image: certbot/certbot
-    container_name: certbot-gen
-    volumes:
-      - ./certbot/conf:/etc/letsencrypt
-      - ./certbot/www:/var/www/certbot
-    entrypoint: >
-      sh -c "rm -rf /etc/letsencrypt/live/aitalla.cloud
-      /etc/letsencrypt/archive/aitalla.cloud
-      /etc/letsencrypt/renewal/aitalla.cloud.conf && 
-      certbot certonly --webroot
-      --webroot-path=/var/www/certbot
-      --email adam.aitalla9@gmail.com
-      --agree-tos
-      --no-eff-email
-      -d aitalla.cloud"
