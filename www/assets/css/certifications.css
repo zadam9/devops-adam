@@ -1,0 +1,181 @@
+/* Certifications Section - Timeline Style */
+.certifications-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 5rem auto 0;
+  padding: 2.5rem 0;
+}
+
+.certification-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(79, 70, 229, 0.3);
+}
+
+.certification-item {
+  display: flex;
+  position: relative;
+  margin-bottom: 6rem;
+  align-items: center;
+}
+
+.certification-item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.certification-badge {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid var(--primary-color);
+  transition: all 0.4s ease;
+}
+
+.certification-item:hover .certification-badge {
+  transform: translateX(-50%) scale(1.15);
+  box-shadow: 0 0 20px rgba(79, 70, 229, 0.4);
+}
+
+.badge-image {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.certification-content {
+  width: calc(50% - 70px);
+  background: var(--bg-card);
+  border-radius: 18px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.certification-content:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background: var(--bg-card);
+  transform: rotate(45deg) translateY(-50%);
+}
+
+.certification-item:nth-child(even) .certification-content:before {
+  right: -10px;
+}
+
+.certification-item:nth-child(odd) .certification-content:before {
+  left: -10px;
+}
+
+.certification-item:hover .certification-content {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.certification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.8rem;
+}
+
+.certification-title {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.certification-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.certification-status.completed {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--secondary-color);
+}
+
+.certification-status.pending {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--accent-color);
+}
+
+.certification-issuer {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--accent-color);
+  margin-bottom: 1.8rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.certification-description {
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.certification-date {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Responsive Design for Timeline */
+@media (max-width: 768px) {
+  .certification-line {
+    left: 30px;
+  }
+  
+  .certification-item,
+  .certification-item:nth-child(odd) {
+    flex-direction: row;
+    margin-left: 60px;
+  }
+  
+  .certification-badge {
+    left: 30px;
+    transform: translateX(-50%);
+  }
+  
+  .certification-content {
+    width: calc(100% - 70px);
+  }
+  
+  .certification-item:hover .certification-badge {
+    transform: translateX(-50%) scale(1.15);
+  }
+  
+  .certification-content:before {
+    display: none;
+  }
+} 
