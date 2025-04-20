@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adam | Future DevOps & Cloud Engineer</title>
-    <meta name="description" content="Portfolio d'Adam, étudiant en R&T, prêt admis à l'IMT Atlantique" />
+    <title>Adam | DevOps & Cloud Engineer</title>
+    <meta name="description" content="Portfolio d'Adam, DevOps & Cloud Engineer, étudiant à IMT Atlantique" />
     
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
@@ -93,8 +93,8 @@
               <span data-translate="hero.available">Disponible pour alternance</span>
             </div>
             <h1>Adam<span class="accent">.</span></h1>
-            <h2 data-translate="hero.title"> Future DevOps & Cloud Engineer</h2>
-            <p data-translate="hero.description">Passionné par les technologies cloud, la conteneurisation et l'automatisation. Pré-admis à l'IMT Atlantique pour la rentrée 2025, je recherche une alternance Ingénieur Réseau, DevOps, Cloud ou Cybersécurité, pour une durée de 3 ans.</p>
+            <h2 data-translate="hero.title">DevOps & Cloud Engineer</h2>
+            <p data-translate="hero.description">Passionné par les technologies cloud, la conteneurisation et l'automatisation. Étudiant à IMT Atlantique, je recherche une alternance en ingénierie DevOps, Cloud ou Cybersécurité.</p>
             
             <div class="hero-cta">
               <a href="#projets" class="btn btn-primary" data-translate="hero.projects">Découvrir mes projets</a>
@@ -127,7 +127,7 @@
                   <i class="fab fa-git-alt"></i>
                 </div>
               </div>
-              <img src="assets/icons/profile-image.png" alt="Adam" class="profile-img" />
+              <img src="assets/icons/profile-image.svg" alt="Adam" class="profile-img" />
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@
               <div class="project-features">
                 <div class="feature">
                   <i class="fas fa-check-circle"></i>
-                  <span>Hébergement Cloud</span>
+                  <span>Infrastructure-as-Code</span>
                 </div>
                 <div class="feature">
                   <i class="fas fa-check-circle"></i>
@@ -202,12 +202,13 @@
                 <span class="tag">DevOps</span>
                 <span class="tag">Monitoring</span>
                 <span class="tag">Docker</span>
-                <span class="tag">Node</span>
+                <span class="tag">Grafana</span>
               </div>
-              <h3 class="project-title">Motor Dashboard</h3>
+              <h3 class="project-title">LaborEssence Dashboard</h3>
               <p class="project-description">
                 Un tableau de bord de monitoring en temps réel pour Docker avec visualisation des ressources système,
-                statuts des sites web et métriques de performance.
+                statuts des sites web et métriques de performance. Intégration avec Grafana pour une visualisation
+                avancée des données.
               </p>
               <div class="project-features">
                 <div class="feature">
@@ -224,7 +225,7 @@
                 </div>
                 <div class="feature">
                   <i class="fas fa-check-circle"></i>
-                  <span>Gestion des logs simplifiée</span>
+                  <span>Intégration Docker</span>
                 </div>
               </div>
               <div class="project-links">
@@ -308,7 +309,7 @@
               <div class="skill-item" data-level="85">
                 <div class="skill-info">
                   <span class="skill-name">Docker</span>
-                  <span class="skill-percentage">80%</span>
+                  <span class="skill-percentage">85%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-progress"></div>
@@ -317,7 +318,7 @@
               <div class="skill-item" data-level="80">
                 <div class="skill-info">
                   <span class="skill-name">AWS</span>
-                  <span class="skill-percentage">75%</span>
+                  <span class="skill-percentage">80%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-progress"></div>
@@ -326,7 +327,7 @@
               <div class="skill-item" data-level="90">
                 <div class="skill-info">
                   <span class="skill-name">CI/CD</span>
-                  <span class="skill-percentage">75%</span>
+                  <span class="skill-percentage">90%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-progress"></div>
@@ -335,7 +336,7 @@
               <div class="skill-item" data-level="95">
                 <div class="skill-info">
                   <span class="skill-name">Linux</span>
-                  <span class="skill-percentage">90%</span>
+                  <span class="skill-percentage">95%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-progress"></div>
@@ -362,7 +363,7 @@
               <div class="skill-item" data-level="90">
                 <div class="skill-info">
                   <span class="skill-name">VoIP</span>
-                  <span class="skill-percentage">85%</span>
+                  <span class="skill-percentage">90%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-progress"></div>
@@ -469,7 +470,7 @@
               <i class="fas fa-university"></i>
               <span>IUT Créteil-Vitry</span>
             </div>
-            <p class="edu-description">Spécialité Réseaux Opérateurs et Multimédia (ROM)</p>
+            <p class="edu-description">Spécialisation Réseaux Opérateurs et Multimédia (ROM)</p>
           </div>
           
           <div class="education-card">
@@ -501,7 +502,7 @@
           
           <div class="certification-item">
             <div class="certification-badge">
-              <img src="assets/certifications/aws.png" alt="AWS Certified Cloud Practitioner" class="badge-image">
+              <img src="assets/certifications/aws.png" alt="AWS Badge" class="badge-image">
             </div>
             <div class="certification-content">
               <div class="certification-header">
@@ -528,11 +529,11 @@
           
           <div class="certification-item">
             <div class="certification-badge">
-              <img src="assets/certifications/ccna.png" alt="Cisco CCNA" class="badge-image">
+              <img src="assets/certifications/ccna.png" alt="CCNA Badge" class="badge-image">
             </div>
             <div class="certification-content">
               <div class="certification-header">
-                <h3 class="certification-title">CCNA </h3>
+                <h3 class="certification-title">CCNA 2024</h3>
                 <div class="certification-status completed">
                   <i class="fas fa-check-circle"></i>
                   <span>Obtenue</span>
@@ -543,8 +544,8 @@
                 <span>Cisco</span>
               </div>
               <p class="certification-description">
-                Certification Cisco obtenue dans le cadre de ma formation BUT RT à l'IUT.
-               
+                Certification en réseaux Cisco obtenue dans le cadre de ma formation BUT RT à l'IUT.
+                Validation des compétences en configuration et dépannage de réseaux.
               </p>
               <div class="certification-date">
                 <i class="fas fa-calendar-alt"></i>
@@ -563,7 +564,7 @@
       <div class="container">
         <div class="section-header" data-aos="fade-up">
           <h2 class="section-title">Contact<span class="accent">.</span></h2>
-          <p class="section-subtitle">Discutons</p>
+          <p class="section-subtitle">Discutons de vos projets</p>
         </div>
         
         <div class="contact-container" data-aos="fade-up" data-aos-delay="100">
@@ -589,7 +590,7 @@
                 <i class="fas fa-map-marker-alt"></i>
               </div>
               <h3>Localisation</h3>
-              <p>Ile de France, France</p>
+              <p>Région parisienne, France</p>
             </div>
             
             <div class="contact-socials">
@@ -612,7 +613,7 @@
           <div class="footer-logo">
             <span class="logo-text">A<span class="accent">.</span></span>
           </div>
-          <p class="copyright">© 2025 Adam. Tous droits réservés.</p>
+          <p class="copyright">© 2024 Adam. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
@@ -628,4 +629,3 @@
     <script src="assets/js/script.js"></script>
   </body>
 </html>
-
