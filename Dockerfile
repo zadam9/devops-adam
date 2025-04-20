@@ -24,4 +24,10 @@ COPY ./www/assets/certifications /usr/share/nginx/html/assets/certifications
 # Copier tous les fichiers favicon
 COPY ./www/assets/favicon /usr/share/nginx/html/assets/favicon
 
+# Vérifier que les images sont bien copiées
+RUN ls -la /usr/share/nginx/html/assets/project/
+
+# S'assurer que Nginx peut accéder aux fichiers
+RUN chown -R nginx:nginx /usr/share/nginx/html/assets/
+
 EXPOSE 80
